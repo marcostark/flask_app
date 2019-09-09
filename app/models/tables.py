@@ -28,7 +28,7 @@ class Post(db.Model):
     user_id = db.Column(db.Integer, db.ForeignKey('users.id'))
 
     #Relacionamento
-    user = db.relationship('User', foreing_keys=user_id)
+    user = db.relationship('User', foreign_keys=user_id)
 
     def __init__(self, content, user_id):
         self.content = content
@@ -46,5 +46,5 @@ class Follow(db.Model):
     follower_id = db.Column(db.Integer, db.ForeignKey('users.id'))
 
     # Relacionamento
-    user = db.relationship('User', foreing_keys=user_id)
-    follower = db.relationship('User', foreing_keys=follower_id)
+    user = db.relationship('User', foreign_keys=user_id)
+    follower = db.relationship('User', foreign_keys=follower_id)
