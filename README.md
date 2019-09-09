@@ -1,5 +1,10 @@
 # Revisando Flask
 
+## Bibliotecas utilizadas
+    - SQLAlchemy para ORM 
+    - Flask WTF para formularios
+    - Flask-Migrate e Flask-Script para migrações
+
 ### Criar migrações
     - python manage.py db init
 
