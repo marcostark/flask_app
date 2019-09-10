@@ -4,6 +4,7 @@
     - SQLAlchemy para ORM 
     - Flask WTF para formularios
     - Flask-Migrate e Flask-Script para migrações
+    - Flask-Login, funcionalidade de login
 
 ### Criar migrações
     - python manage.py db init
